@@ -1,3 +1,8 @@
+"""
+Question: - Read the data from csv file and validate if the dataframe schema defined is similar to that present
+in the source file
+"""
+
 # Databricks notebook source
 schema = StructType([
     StructField("Company",StringType(),True),
@@ -26,4 +31,4 @@ else:
 
 # COMMAND ----------
 
-#Abhishek R Malvadkar
+
