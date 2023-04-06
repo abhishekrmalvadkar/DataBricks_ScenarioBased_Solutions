@@ -1,7 +1,7 @@
 # Databricks notebook source
 
 """
-Add multiple columns to a dataFrame dynamically
+Add multiple columns to a dataFrame dynamically.
 
 """
 
