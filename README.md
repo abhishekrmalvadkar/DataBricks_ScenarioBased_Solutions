@@ -52,4 +52,8 @@ Filters the DataFrame to only include orders where the total_amount is greater t
 Groups the filtered DataFrame by year and calculates the total revenue (sum of total_amount) for each year.
 Returns a new DataFrame with two columns: year and total_revenue, sorted by year in ascending order.
 Write a function called calculate_yearly_revenue that implements the above tasks and takes orders_df as input. The function should return the resulting DataFrame.
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Employee_NoteBook.py :
+
+Mount the blob storage from ADLS in databricks notebook and apply some basic transformations using pyspark, use dbutils widgets to categorise the data based on employee department and load the data in the form of csv file back to blob storage.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 # Databricks notebook source
 dbutils.fs.mount(source = 'wasbs://employeein@demostorageabhishek.blob.core.windows.net',
                 mount_point = '/mnt/blobStorage',
-                extra_configs = {'fs.azure.account.key.demostorageabhishek.blob.core.windows.net':'pcy7mEao6FT6zttzYIaEJQ9HFJ5g4fG2XIIY8tQcwj/TKya0HxBN92WO5iESUfESCT4xABfUcwlt+AStIlFBFQ=='} )
+                extra_configs = {'fs.azure.account.key.demostorageabhishek.blob.core.windows.net':'Enter your ADLS Access Key'} )
 
 # COMMAND ----------
 
