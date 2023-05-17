@@ -57,3 +57,14 @@ Employee_NoteBook.py :
 
 Mount the blob storage from ADLS in databricks notebook and apply some basic transformations using pyspark, use dbutils widgets to categorise the data based on employee department and load the data in the form of csv file back to blob storage.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+secretScopes.py :
+
+Mounting the blob storage to databrciks by using secret scopes ( here secret key is access key of the blob storage container )
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Movies_SAS_KEY_Mount.py :
+
+Mount the blob storage to databricks.
+Split the data present in title column into two different columns named movie_name and year.
+Output csv file should contain the count of movies released each year.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
