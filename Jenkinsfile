@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     git(
-                        credentialsId: 'b32a65a1-452b-453d-aa16-0e01dec14992',
+                        credentialsId: 'b3b3ed96-9893-460b-8a8c-d83a22445137',
                         url: 'https://github.com/abhishekrmalvadkar/DataBricks/blob/main/Casting%20columns.py',
                         branches: [[name: '*/**']],
                         directory: 'PythonAssignments' // Specify the directory to clone into
