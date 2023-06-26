@@ -21,23 +21,18 @@ output_path = "dbfs:/FileStore/Customer_Order_CSV"
 year_filter = 2023
 
 def process_orders(orders_path, customers_path, output_path, year_filter):
-    # Read the CSV files into DataFrames
+    
     orders_df = spark.read.csv(orders_path, header=True, inferSchema=True)
     customers_df = spark.read.csv(customers_path, header=True, inferSchema=True)
     
-    # Filter orders based on the specified year
     orders_filtered = filter_orders_by_year(orders_df, year_filter)
     
-    # Join orders and customers based on customer ID
     joined_df = join_orders_customers(orders_filtered, customers_df)
     
-    # Calculate total order amount for each customer
     order_amount_df = calculate_order_amount(joined_df)
     
-    # Write the result to a new CSV file
     write_to_csv(order_amount_df, output_path)
     
-    # Show the result
     show_result(order_amount_df)
 
 
@@ -61,8 +56,3 @@ def write_to_csv(df, output_path):
 def show_result(df):
     df.show()
 process_orders(orders_path, customers_path, output_path, year_filter)
-
-
-# COMMAND ----------
-
-
